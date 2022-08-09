@@ -1,0 +1,12 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <form action='/postsubmit' method='post' enctype="multipart/form-data">
+        {% csrf_token %}
+            <input type="file" accept="jpg,png" id="img" name="img" />
+            <input type="submit" value="Upload"/><br><br>
+            <textarea style="width:1337;height:568;">{{ text }}</textarea>
+        </form>
+    </body>
+</html>
